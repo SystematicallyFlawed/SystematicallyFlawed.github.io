@@ -1,3 +1,40 @@
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    padding-bottom: 50px;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+h2, h4 {
+    font-size: 30px;
+    color: #d0d0d0;
+}
+
+h3, h5, h6 {
+    font-size: 20px;
+}
+
+body {
+    background-image: url("Images/Murder_of_Crows.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: "SAF";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    pointer-events: none;
 }
